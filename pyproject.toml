@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multiref"
+version = "0.1.0"
+description = "Multi-reference KL-regularized RLHF (GRPO and DPO with ensembles of reference models)"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Gholamali Aminian" },
+    { name = "Amir R. Asadi" },
+    { name = "Idan Shenfeld" },
+    { name = "Youssef Mroueh" },
+]
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["multiref*"]

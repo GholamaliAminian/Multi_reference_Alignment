@@ -1,0 +1,21 @@
+# Core
+torch>=2.1
+transformers>=4.48
+datasets>=2.19
+accelerate>=0.34
+trl>=0.16,<0.18   # multiref/grpo_trainer.py is based on TRL 0.16/0.17 (VLLMClient server mode)
+peft>=0.12
+wandb
+tqdm
+numpy
+scipy
+
+# Math answer parsing (multiref/math_eval)
+sympy
+latex2sympy2
+word2number
+regex
+
+# Optional:
+#   vllm        - scripts/eval_gsm8k_vllm.py and `--use_vllm` in GRPO training
+#   flash-attn  - scripts/eval_reward.py loads models with flash_attention_2
